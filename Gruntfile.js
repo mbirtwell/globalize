@@ -28,6 +28,13 @@ module.exports = function( grunt ) {
 
 	grunt.initConfig({
 		pkg: pkg,
+		commitplease: {
+			currentBranch: {
+				options: {
+					committish: "origin/master..HEAD"
+				}
+			}
+		},
 		connect: {
 			options: {
 				port: 9001,
@@ -387,6 +394,7 @@ module.exports = function( grunt ) {
 		"jshint:test",
 		"jscs:grunt",
 		"jscs:source",
+		"commitplease",
 
 		// TODO fix issues, enable
 		//"jscs:test",
