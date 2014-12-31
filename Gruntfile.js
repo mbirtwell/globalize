@@ -31,7 +31,7 @@ module.exports = function( grunt ) {
 		commitplease: {
 			currentBranch: {
 				options: {
-					committish: "origin/master..HEAD"
+					committish: "cf52d58..HEAD"
 				}
 			}
 		},
