@@ -344,13 +344,13 @@ module.exports = function( grunt ) {
 			},
 			dist: {
 				files: {
-					"tmp/globalize.min.js": [ "dist/globalize.js" ],
-					"tmp/globalize/currency.min.js": [ "dist/globalize/currency.js" ],
-					"tmp/globalize/date.min.js": [ "dist/globalize/date.js" ],
-					"tmp/globalize/number.min.js": [ "dist/globalize/number.js" ],
-					"tmp/globalize/plural.min.js": [ "dist/globalize/plural.js" ],
-					"tmp/globalize/message.min.js": [ "dist/globalize/message.js" ],
-					"tmp/globalize/relative-time.min.js": [ "dist/globalize/relative-time.js" ]
+					"dist/globalize.min.js": [ "dist/globalize.js" ],
+					"dist/globalize/currency.min.js": [ "dist/globalize/currency.js" ],
+					"dist/globalize/date.min.js": [ "dist/globalize/date.js" ],
+					"dist/globalize/number.min.js": [ "dist/globalize/number.js" ],
+					"dist/globalize/plural.min.js": [ "dist/globalize/plural.js" ],
+					"dist/globalize/message.min.js": [ "dist/globalize/message.js" ],
+					"dist/globalize/relative-time.min.js": [ "dist/globalize/relative-time.js" ]
 				}
 			}
 		},
@@ -358,8 +358,8 @@ module.exports = function( grunt ) {
 		// TODO figure out how to specify exceptions for externals
 		"compare_size": {
 			files: [
-				"tmp/globalize.min.js",
-				"tmp/globalize/*min.js"
+				"dist/globalize.min.js",
+				"dist/globalize/*min.js"
 			],
 			options: {
 				compress: {
